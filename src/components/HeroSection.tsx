@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center section-navy pt-20">
+    <section id="hero" className="relative min-h-screen flex items-center section-navy pt-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 right-20 w-96 h-96 border border-primary-foreground/20 rounded-full" />
