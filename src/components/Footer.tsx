@@ -79,16 +79,14 @@ const Footer = () => {
             <p className="text-center md:text-left">© {currentYear} Du Toit Lambrechts Inc. All rights reserved.</p>
             <div className="flex gap-4 sm:gap-6">
               <a 
-                href="#" 
+                href="#/privacy" 
                 className="hover:text-primary-foreground transition-colors"
-                rel="noopener noreferrer"
               >
                 Privacy Policy
               </a>
               <a 
-                href="#" 
+                href="#/terms" 
                 className="hover:text-primary-foreground transition-colors"
-                rel="noopener noreferrer"
               >
                 Terms of Service
               </a>
