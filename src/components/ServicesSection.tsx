@@ -56,48 +56,48 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-24 lg:py-32 bg-background">
-      <div className="container">
+    <section id="services" className="py-16 md:py-24 lg:py-32 bg-background">
+      <div className="container px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="line-accent mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+          <div className="line-accent mx-auto mb-4 md:mb-6" />
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground mb-4 md:mb-6">
             Our Legal Services
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base md:text-lg text-muted-foreground">
             Comprehensive legal solutions tailored to your needs. From property transactions to court litigation, we provide expert guidance every step of the way.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {services.map((service) => (
-            <div
+            <article
               key={service.title}
               className="card-service group cursor-pointer"
             >
-              <div className="w-14 h-14 rounded-xl bg-muted flex items-center justify-center mb-5 group-hover:bg-secondary/10 transition-colors duration-300">
-                <service.icon className="h-7 w-7 text-secondary" />
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-muted flex items-center justify-center mb-4 md:mb-5 group-hover:bg-secondary/10 transition-colors duration-300">
+                <service.icon className="h-6 w-6 md:h-7 md:w-7 text-secondary" aria-hidden="true" />
               </div>
-              <h3 className="text-lg font-serif font-medium text-foreground mb-2 group-hover:text-secondary transition-colors duration-300">
+              <h3 className="text-base md:text-lg font-serif font-medium text-foreground mb-2 group-hover:text-secondary transition-colors duration-300">
                 {service.title}
               </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
                 {service.description}
               </p>
-            </div>
+            </article>
           ))}
         </div>
 
         {/* Additional Services Note */}
-        <div className="mt-12 text-center">
-          <p className="text-muted-foreground mb-6">
+        <div className="mt-8 md:mt-12 text-center">
+          <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6">
             We also handle collections, debt review, antenuptial contracts, trusts, insolvencies, and more.
           </p>
-          <Button variant="default" size="lg" asChild>
+          <Button variant="default" size="lg" className="w-full sm:w-auto" asChild>
             <a href="#contact">
               Discuss Your Legal Needs
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </a>
           </Button>
         </div>

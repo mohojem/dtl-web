@@ -5,9 +5,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="container py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="bg-primary text-primary-foreground" role="contentinfo">
+      <div className="container py-12 md:py-16 px-4 sm:px-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Logo className="h-12 w-auto mb-6" light />
@@ -74,14 +74,22 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10">
-        <div className="container py-6">
+        <div className="container py-6 px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/50">
-            <p>© {currentYear} Du Toit Lambrechts Inc. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-primary-foreground transition-colors">
+            <p className="text-center md:text-left">© {currentYear} Du Toit Lambrechts Inc. All rights reserved.</p>
+            <div className="flex gap-4 sm:gap-6">
+              <a 
+                href="#" 
+                className="hover:text-primary-foreground transition-colors"
+                rel="noopener noreferrer"
+              >
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-primary-foreground transition-colors">
+              <a 
+                href="#" 
+                className="hover:text-primary-foreground transition-colors"
+                rel="noopener noreferrer"
+              >
                 Terms of Service
               </a>
             </div>
